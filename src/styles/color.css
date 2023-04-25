@@ -1,0 +1,19 @@
+.bg-color-brand-1{
+    background-color: var(--color-brand-1);
+}
+.bg-color-brand-2{
+    background-color: var(--color-brand-2);
+}
+.bg-color-grey-2{
+    background-color: var(--color-grey-2);
+}
+.bg-color-grey-1{
+    background-color: var(--color-grey-1);
+}
+
+.color-grey-7{
+    color: var(--color-grey-7);
+}
+.color-grey-7-transparent{
+    color: var(--color-grey-7-transparent);
+}

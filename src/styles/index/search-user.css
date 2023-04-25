@@ -1,0 +1,20 @@
+.search-user{
+    width: 50%;
+    height: 100vh;
+    padding: 15%;
+    gap: 1rem;
+}
+
+.search-user__title{
+    margin-bottom: 2rem;
+}
+
+.search-user__input{
+    padding: 0.625rem;
+    border-radius: 0.25rem;
+}
+
+.search-user__input::placeholder{
+    color: #ffffff50;
+    font-weight: 400;
+}
