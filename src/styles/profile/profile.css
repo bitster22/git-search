@@ -1,0 +1,7 @@
+.container{
+    width: 51rem;
+    max-width: 100%;
+    padding: 0 1rem;
+    margin: 0 auto;
+    gap: 1.875rem;
+}

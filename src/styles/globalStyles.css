@@ -9,6 +9,7 @@
   --color-grey-7: #ffffff;
   --color-grey-7-transparent: #ffffff50;
   --color-alert: #c22554;
+  --color-grey-transparent: rgba(255, 255, 255, 0.08);
 
   --font-primary: "Inter", sans-serif;
 }
