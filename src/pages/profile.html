@@ -12,11 +12,40 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="../styles/globalStyles.css">
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/flex.css">
+    <link rel="stylesheet" href="../styles/color.css">
+    <link rel="stylesheet" href="../styles/text.css">
+    <link rel="stylesheet" href="../styles/button.css">
+
+    <link rel="stylesheet" href="../styles/profile/profile.css">
+    <link rel="stylesheet" href="../styles/profile/user.css">
 
     <title>Git Search - User Profile</title>
   </head>
   <body>
-
+    <div class="container flex flex__dir-column">
+      <header class="flex">
+        <div class="user flex">
+          <div class="user__image"></div>
+          <h1 class="user__name color-grey-7 font-3 font-bolder-weight">Samuel Leão</h1>
+        </div>
+        <button class="button__change-user color-grey-7 bg-color-grey-transparent font-bold-weight">Trocar de usuário</button>
+      </header>
+      <main>
+        <ul>
+          <li>
+            <h2>Project Module 2 - Kenzie...</h2>
+            <p>Various versions have evolved over the years, 
+              sometimes by accident, 
+              sometimes on purpose injected humour and the like
+            </p>
+            <button>Repositório</button>
+          </li>
+        </ul>
+      </main>
+    </div>
     <script type="module" src="../scripts/profile.js"></script>
   </body>
 </html>

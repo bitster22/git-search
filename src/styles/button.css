@@ -8,3 +8,9 @@ button{
     border-radius: 0.5rem;
     font-size: 1.125rem;
 }
+
+.button__change-user{
+    padding-inline: 1.5rem;
+    border-radius: 0.5rem;
+    height: 2.375rem;
+}
