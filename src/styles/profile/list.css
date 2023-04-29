@@ -27,6 +27,8 @@
     border-style: solid;
     border-width: 1px;
     border-color: var(--color-grey-7);
+    border-radius: 0.25rem;
+    cursor: pointer;
 }
 
 .list__repository__button:hover{

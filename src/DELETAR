@@ -1,0 +1,16 @@
+<div class="user flex">
+  <div class="user__image"></div>
+  <h1 class="user__name flex flex__align-center color-grey-7 font-bolder-weight">Samuel Leão</h1>
+</div>
+<button class="button__change-user color-grey-7 bg-color-grey-transparent font-bold-weight"> Trocar de usuário</button>
+
+<li class="list__repository flex flex__dir-column">
+
+    <h2 class="color-grey-7 font-3">Project Module 2 - Kenzie...</h2>
+    <p class="list__repository__description font-4 font-light-weight">Various versions have evolved over the years, 
+      sometimes by accident, 
+      sometimes on purpose injected humour and the like
+    </p>
+    <button class="list__repository__button flex flex__align-center flex__justify-center bg-color-grey-2 color-grey-7 font-4">Repositório</button>
+
+</li>

@@ -1,12 +1,14 @@
-const saveLocal = () =>{
-    const text = document.querySelector(".search-user__input");
+import { searchUser } from "./request.js";
+import { searchRepos } from "./request.js";
+
+function handleSearch(){
+    const input = document.querySelector(".search-user__input");
     const button = document.querySelector("#search-profile");
 
-    button.addEventListener("click", ()=>{
-        localStorage.setItem("teste", text.value);
+    button.addEventListener("click", async () =>{
+        const userName = input.value;
 
-        console.log(localStorage.getItem("teste"));
+        await searchUser(userName);
+        await searchRepos(userName);
     })
 }
-
-saveLocal();
