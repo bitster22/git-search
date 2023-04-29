@@ -1,37 +1,37 @@
-.list{
-    gap: 1.2rem;
+.list {
+  gap: 1.2rem;
 }
-.list__repository{
-    width: 23.813rem;
-    height: 15.188rem;
-    border-style: solid;
-    border-width: 0.125rem;
-    border-color: var(--color-grey-transparent);
-    border-radius: 0.5rem;
-    gap: 1.5rem;
-    padding: 2rem;
+.list__repository {
+  width: 23.813rem;
+  height: 15.188rem;
+  border-style: solid;
+  border-width: 0.125rem;
+  border-color: var(--color-grey-transparent);
+  border-radius: 0.5rem;
+  gap: 1.5rem;
+  padding: 2rem;
 }
-.list__repository:hover{
-    background-color: #191C1F;
-    border-color: var(--color-grey-7);
-}
-
-.list__repository__description{
-    color: rgba(255, 255, 255, 0.6);
+.list__repository:hover {
+  background-color: #191c1f;
+  border-color: var(--color-grey-7);
 }
 
-.list__repository__button{
-    height: 1.75rem;
-    width: 35%;
-    padding-inline: 0.5rem;
-    border-style: solid;
-    border-width: 1px;
-    border-color: var(--color-grey-7);
-    border-radius: 0.25rem;
-    cursor: pointer;
+.list__repository__description {
+  color: rgba(255, 255, 255, 0.6);
 }
 
-.list__repository__button:hover{
-    border-color: var(--color-brand-2);
-    background-color: var(--color-brand-2);
+.list__repository__button {
+  height: 1.75rem;
+  width: 35%;
+  padding-inline: 0.5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-grey-7);
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.list__repository__button:hover {
+  border-color: var(--color-brand-2);
+  background-color: var(--color-brand-2);
 }

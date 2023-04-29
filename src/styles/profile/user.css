@@ -1,17 +1,17 @@
-.user{
-    gap: 1rem;
+.user {
+  gap: 1rem;
 }
 
-.user__image{
-    height: 80px;
-    width: 80px;
-    background-image: url("https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg");
-    background-size: contain;
-    border-radius: 50%;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #D6336C;
+.user__image {
+  height: 80px;
+  width: 80px;
+  background-image: url("https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg");
+  background-size: contain;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #d6336c;
 }
-.user__name{
-    font-size: 1.5rem;
+.user__name {
+  font-size: 1.5rem;
 }

@@ -1,16 +1,16 @@
-.error__images{
-    width: 30%;
-    padding: 10%;
+.error__images {
+  width: 30%;
+  padding: 10%;
 }
 
-.error__images__square{
-    width: 400px;
-    height: 350px;
-    background: #D6336C;
-    border-radius: 5px;
-    box-shadow: 1.5rem 2rem #520F84;
+.error__images__square {
+  width: 400px;
+  height: 350px;
+  background: #d6336c;
+  border-radius: 5px;
+  box-shadow: 1.5rem 2rem #520f84;
 }
 
-.error__images_icon{
-    font-size: 6.25rem;
+.error__images_icon {
+  font-size: 6.25rem;
 }

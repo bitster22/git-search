@@ -1,59 +1,92 @@
-export function renderUserInfo(user){
-    const header = document.querySelector("#profile-header");
+export function renderUserInfo(user) {
+  const header = document.querySelector("#profile-header");
 
-    const divUserContainer = document.createElement("div");
+  const divUserContainer = document.createElement("div");
 
-    const divImage = document.createElement("div");
-    const titleName = document.createElement("h1");
+  const divImage = document.createElement("div");
+  const titleName = document.createElement("h1");
 
-    const button = document.createElement("button");
+  const button = document.createElement("button");
 
-    divUserContainer.classList.add("user", "flex");
+  divUserContainer.classList.add("user", "flex");
 
-    divImage.classList.add("user__image");
-    titleName.classList.add("user__name", "flex", "flex__align-center", "color-grey-7", "font-bolder-weight");
+  divImage.classList.add("user__image");
+  titleName.classList.add(
+    "user__name",
+    "flex",
+    "flex__align-center",
+    "color-grey-7",
+    "font-bolder-weight"
+  );
 
-    button.classList.add("button__change-user", "color-grey-7", "bg-color-grey-transparent", "font-bold-weight");
+  button.classList.add(
+    "button__change-user",
+    "color-grey-7",
+    "bg-color-grey-transparent",
+    "font-bold-weight"
+  );
 
-    divImage.style.backgroundImage = `url(${user.avatar_url})`;
-    titleName.innerText = user.name;
+  divImage.style.backgroundImage = `url(${user.avatar_url})`;
+  titleName.innerText = user.name;
 
-    button.innerText = "Trocar de usuário";
-    button.disabled = false;
-    button.addEventListener("click", ()=>{
-        localStorage.clear();
-        location.replace("../../")
-    })
+  button.innerText = "Trocar de usuário";
+  button.disabled = false;
+  button.addEventListener("click", () => {
+    localStorage.clear();
+    location.replace("../../");
+  });
 
-    header.innerHTML = "";
+  header.innerHTML = "";
 
-    divUserContainer.append(divImage, titleName);
-    header.append(divUserContainer, button);
+  divUserContainer.append(divImage, titleName);
+  header.append(divUserContainer, button);
 }
 
-export function renderRepos(repository){
-    const ul = document.querySelector(".list");
+export function renderRepos(repository) {
+  const ul = document.querySelector(".list");
+  let paragraph = repository.description;
 
-    const li = document.createElement("li");
+  const li = document.createElement("li");
 
-    const h2 = document.createElement("h2");
-    const pDescription = document.createElement("p");
-    const button = document.createElement("button");
+  const h2 = document.createElement("h2");
+  const pDescription = document.createElement("p");
+  const button = document.createElement("button");
 
-    li.classList.add("list__repository", "flex", "flex__dir-column");
+  li.classList.add("list__repository", "flex", "flex__dir-column");
 
-    h2.classList.add("color-grey-7", "font-3");
-    pDescription.classList.add("list__repository__description", "font-4", "font-light-weight");
-    button.classList.add("list__repository__button", "flex", "flex__align-center", "flex__justify-center", "bg-color-grey-2", "color-grey-7", "font-4");
+  h2.classList.add("color-grey-7", "font-3");
+  pDescription.classList.add(
+    "list__repository__description",
+    "font-4",
+    "font-light-weight"
+  );
+  button.classList.add(
+    "list__repository__button",
+    "flex",
+    "flex__align-center",
+    "flex__justify-center",
+    "bg-color-grey-2",
+    "color-grey-7",
+    "font-4"
+  );
 
-    h2.innerText = repository.name;
-    pDescription.innerText = repository.description;
-    button.innerText = "Repositório";
-    button.addEventListener("click", ()=>{
-        open(repository.html_url, "_blank");
-    })
+  h2.innerText = repository.name;
 
-    li.append(h2, pDescription, button);
+  if (paragraph == null) {
+    pDescription.innerText = "Sem descrição";
+  } else {
+    pDescription.innerText = paragraph.substring(0, 100);
+    if (pDescription.innerText.length >= 100) {
+      pDescription.innerText += "...";
+    }
+  }
 
-    ul.appendChild(li);
+  button.innerText = "Repositório";
+  button.addEventListener("click", () => {
+    open(repository.html_url, "_blank");
+  });
+
+  li.append(h2, pDescription, button);
+
+  ul.appendChild(li);
 }
