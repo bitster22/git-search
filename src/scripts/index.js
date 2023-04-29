@@ -8,7 +8,11 @@ function handleSearch(){
     button.addEventListener("click", async () =>{
         const userName = input.value;
 
+        console.log("clicado")
+
         await searchUser(userName);
-        await searchRepos(userName);
+        //await searchRepos(userName);
     })
 }
+
+handleSearch();

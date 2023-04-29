@@ -32,7 +32,9 @@ export function renderUserInfo(user){
 }
 
 export function renderRepos(repository){
-    const li = document.querySelector(".list");
+    const ul = document.querySelector(".list");
+
+    const li = document.createElement("li");
 
     const h2 = document.createElement("h2");
     const pDescription = document.createElement("p");
@@ -42,14 +44,16 @@ export function renderRepos(repository){
 
     h2.classList.add("color-grey-7", "font-3");
     pDescription.classList.add("list__repository__description", "font-4", "font-light-weight");
-    button.classList.add("list__repository__button", "flex", "flex__align-center", "flex__justify-center", "bg-color-grey-2", "color-grey-7 font-4");
+    button.classList.add("list__repository__button", "flex", "flex__align-center", "flex__justify-center", "bg-color-grey-2", "color-grey-7", "font-4");
 
     h2.innerText = repository.name;
     pDescription.innerText = repository.description;
     button.innerText = "Repositório";
     button.addEventListener("click", ()=>{
-        open(repository.url, "_blank");
+        open(repository.html_url, "_blank");
     })
 
     li.append(h2, pDescription, button);
+
+    ul.appendChild(li);
 }

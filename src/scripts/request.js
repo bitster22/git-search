@@ -6,6 +6,7 @@ export async function searchUser(userName){
         if(res.ok){
             const response = await res.json();
             localStorage.setItem("user", JSON.stringify(response));
+            await searchRepos(userName);
             location.replace("./src/pages/profile.html");
             return response;
         }else{
